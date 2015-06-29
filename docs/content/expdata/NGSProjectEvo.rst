@@ -25,12 +25,13 @@ What is the meaning of the score computed by SNiPer for each variation?
 
 For each reported mutation, a **score**, which is meant to indicate the confidence one can have in the prediction, is computed:
 
+The score is a 2 components score taking into account both biological and technical aspects of the analysis.
 * SNP_score=
 
 .. image:: img/evo2.png
 
-* Local-coverage : Number of reads containing the new base with a high quality.
-* Total-coverage : Total number of reads containing the new base.
+* Sbio : allele rate.
+* Stech : f(quality,strand bias).
 
 indel_score=
 
